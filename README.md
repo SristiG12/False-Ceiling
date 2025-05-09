@@ -1,22 +1,16 @@
-# Welcome to your Lovable project
+# False Ceiling Design Wizard
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/386dd1e3-6b08-4c6d-8592-e5528c8b4835
+An interactive tool for designing false ceilings with multiple design options and visualization.
 
 ## How can I edit this code?
 
 There are several ways of editing your application.
 
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/386dd1e3-6b08-4c6d-8592-e5528c8b4835) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
 **Use your preferred IDE**
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+You can work locally using your own IDE, you can clone this repo and push changes.
 
 The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
@@ -24,10 +18,10 @@ Follow these steps:
 
 ```sh
 # Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+git clone https://github.com/SristiG12/False-Ceiling.git
 
 # Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+cd False-Ceiling
 
 # Step 3: Install the necessary dependencies.
 npm i
@@ -62,12 +56,33 @@ This project is built with:
 
 ## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/386dd1e3-6b08-4c6d-8592-e5528c8b4835) and click on Share -> Publish.
+### Deploy with Vercel
 
-## Can I connect a custom domain to my Lovable project?
+This project is configured for seamless deployment with Vercel. To deploy:
 
-Yes, you can!
+1. Create a Vercel account if you don't have one: [Vercel Sign Up](https://vercel.com/signup)
+2. Install Vercel CLI (already included in dev dependencies):
+   ```
+   npm i -g vercel
+   ```
+3. Login to Vercel:
+   ```
+   vercel login
+   ```
+4. Deploy your project:
+   ```
+   vercel
+   ```
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+For production deployment:
+```
+vercel --prod
+```
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+### Custom Domains
+
+You can add custom domains to your Vercel deployment:
+
+1. Go to your project dashboard on Vercel
+2. Navigate to Settings > Domains
+3. Add your custom domain and follow the verification steps
